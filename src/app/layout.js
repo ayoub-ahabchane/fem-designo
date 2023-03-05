@@ -1,5 +1,6 @@
+import Header from "@/components/Header";
 import "./globals.css";
-import { Jost, League_Spartan } from "next/font/google";
+import { Jost } from "next/font/google";
 
 export const metadata = {
   title: "Designo",
@@ -11,17 +12,12 @@ const jost = Jost({
   display: "swap",
 });
 
-const leagueSpartan = League_Spartan({
-  variable: "--font-league-spartan",
-  display: "swap",
-});
-
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${jost.className} ${leagueSpartan.className}`}>
+    <html lang="en" className={`${jost.className}`}>
       <body>
-        <header>Header</header>
-        <main>{children}</main>
+        <Header />
+        <main className="pt-[98px] md:pt-[154px]">{children}</main>
         <footer>Footer</footer>
       </body>
     </html>
