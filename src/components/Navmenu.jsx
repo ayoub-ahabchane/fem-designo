@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import useNavMenu from "./store/hooks/useNavMenu";
+import useNavMenu from "../store/hooks/useNavMenu";
 import Close from "./svg/Close";
 import Hamburger from "./svg/Hamburger";
 import Link from "next/link";

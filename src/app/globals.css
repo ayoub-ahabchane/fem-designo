@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply font-sans text-black;
+    @apply font-sans text-black md:px-10;
   }
 
   @layer components {

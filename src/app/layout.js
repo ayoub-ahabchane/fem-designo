@@ -17,7 +17,9 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${jost.className}`}>
       <body>
         <Header />
-        <main className="pt-[98px] md:pt-[154px]">{children}</main>
+        <main className="mx-auto max-w-[1111px] pt-[98px] md:pt-[154px]">
+          {children}
+        </main>
         <footer>Footer</footer>
       </body>
     </html>
