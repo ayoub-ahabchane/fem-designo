@@ -29,7 +29,7 @@
   }
 
   .navWrapper {
-    @apply h-full mdmax:absolute mdmax:inset-x-0 mdmax:top-[102px] mdmax:bottom-0 mdmax:h-screen mdmax:w-full mdmax:bg-black mdmax:bg-opacity-75;
+    @apply h-full mdmax:absolute mdmax:inset-x-0 mdmax:top-[98px] mdmax:bottom-0 mdmax:h-screen mdmax:w-full mdmax:bg-black mdmax:bg-opacity-75;
   }
 
   .nav {

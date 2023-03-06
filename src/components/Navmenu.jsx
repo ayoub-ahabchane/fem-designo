@@ -13,7 +13,7 @@ const navItems = [
 ];
 
 const Navmenu = () => {
-  const { isMobile, isVisible, toggleNav } = useNavMenu("(max-width: 768px)");
+  const { isMobile, isVisible, toggleNav } = useNavMenu("(max-width: 767px)");
   return (
     <div>
       {isMobile && (
