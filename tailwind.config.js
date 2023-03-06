@@ -24,6 +24,7 @@ module.exports = {
         "light-grey": "#F1F3F5",
         peach: "#E7816B",
         "light-peach": "#FFAD9B",
+        darkPeach50: "rgba(93,2,2,0.10)",
       },
     },
   },
