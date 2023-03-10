@@ -14,6 +14,8 @@ const navItems = [
 
 const Navmenu = () => {
   const { isMobile, isVisible, toggleNav } = useNavMenu("(max-width: 767px)");
+  // TODO (Feature) : Close menu on outside click
+
   return (
     <div>
       {isMobile && (
