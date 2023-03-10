@@ -3,8 +3,12 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply h-full;
+  }
+
   body {
-    @apply font-sans text-black;
+    @apply flex h-full flex-col font-sans text-black;
   }
 
   @layer components {
@@ -44,5 +48,9 @@
 @layer utils {
   .wrapper {
     @apply mx-auto max-w-[1111px] py-9 md:py-16 mdmax:px-6;
+  }
+
+  .pageWrapper {
+    @apply mx-auto mb-[120px] max-w-[1111px] md:mb-[80px] lg:mb-[160px];
   }
 }
