@@ -30,7 +30,7 @@ const Services = () => {
             </div>
           </Link>
         </li>
-        <li className="rounded-2xl bg-[url('../assets/home/mobile/image-app-design.jpg')] bg-cover md:bg-[url('../assets/home/tablet/image-app-design.jpg')]">
+        <li className="rounded-2xl bg-[url('../assets/home/mobile/image-app-design.jpg')] bg-cover md:bg-[url('../assets/home/tablet/image-app-design.jpg')] lg:bg-[url('../assets/home/desktop/image-app-design.jpg')]">
           <Link
             className="flex h-full w-full flex-col items-center justify-center gap-3 rounded-2xl bg-[image:linear-gradient(rgba(29,_28,_30,_0.7),_rgba(29,_28,_30,_0.7))] bg-cover  text-white bg-blend-overlay hover:bg-[image:linear-gradient(rgba(231,_129,_107,_0.7),_rgba(231,_129,_107,_0.7))]"
             href="/services/app-design"
@@ -54,7 +54,7 @@ const Services = () => {
             </div>
           </Link>
         </li>
-        <li className="rounded-2xl bg-[url('../assets/home/mobile/image-graphic-design.jpg')] bg-cover md:bg-[url('../assets/home/tablet/image-graphic-design.jpg')]">
+        <li className="rounded-2xl bg-[url('../assets/home/mobile/image-graphic-design.jpg')] bg-cover md:bg-[url('../assets/home/tablet/image-graphic-design.jpg')] lg:bg-[url('../assets/home/desktop/image-graphic-design.jpg')]">
           <Link
             className="flex h-full w-full flex-col items-center justify-center gap-3 rounded-2xl bg-[image:linear-gradient(rgba(29,_28,_30,_0.7),_rgba(29,_28,_30,_0.7))] bg-cover  text-white bg-blend-overlay hover:bg-[image:linear-gradient(rgba(231,_129,_107,_0.7),_rgba(231,_129,_107,_0.7))]"
             href="/services/graphic-design"

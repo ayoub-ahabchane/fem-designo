@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer className="relative grid grid-rows-[1fr_1fr_auto] place-items-center px-6 md:grid-rows-[4fr_1fr_auto] md:px-10">
       <div className=" row-start-1 row-end-3 w-full max-w-[1111px] text-white ">
-        <div className="flex flex-col items-center justify-between gap-8 rounded-2xl bg-peach bg-[url(../assets/exports/pattern-six-circles.svg)] bg-[size:876px_584px] bg-[position:center] bg-no-repeat px-6 py-16 lg:flex-row lg:px-24">
+        <div className="flex flex-col items-center justify-between gap-8 rounded-2xl bg-peach bg-[url(../assets/exports/pattern-six-circles.svg)] bg-[size:876px_584px] bg-[position:center_right] bg-no-repeat px-6 py-16 lg:flex-row lg:px-24">
           <div className="flex flex-col items-center lg:items-start">
             <h2 className=" md:h2 mb-4 text-center text-[2rem] font-medium leading-[1.125em] md:max-w-[335px]  lg:text-left lg:leading-none">
               Let&apos;s talk about
