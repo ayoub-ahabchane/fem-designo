@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${jost.className}`}>
       <body className="bg-[size:1006px_594px] bg-[position:top_475px_left,_right_bottom_475px] bg-no-repeat lg:bg-[url(../assets/shared/desktop/bg-pattern-leaf.svg),_url(../assets/exports/rectangle-right-aligned.svg)]">
         <Header />
-        <main className="mb-[120px] grow pt-[98px] md:mb-[80px] md:px-10 md:pt-[154px] lg:mb-[160px]">
+        <main className="mb-[120px] grow md:mb-[80px] md:px-10 lg:mb-[160px]">
           {children}
         </main>
         <Footer />

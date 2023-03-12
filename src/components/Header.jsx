@@ -7,7 +7,7 @@ import Logo from "./Logo";
 
 const Header = () => {
   return (
-    <header className="fixed inset-x-0 z-30 bg-white py-9 px-6 md:py-16 md:px-10">
+    <header className=" bg-white py-9 px-6 md:py-16 md:px-10">
       <div className="mx-auto flex w-full max-w-[1111px] items-center justify-between">
         <Logo />
 
