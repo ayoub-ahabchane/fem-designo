@@ -6,7 +6,8 @@ import photonImg from "../../../assets/web-design/desktop/image-photon.jpg";
 import builderImg from "../../../assets/web-design/desktop/image-builder.jpg";
 import blogrImg from "../../../assets/web-design/desktop/image-blogr.jpg";
 import campImg from "../../../assets/web-design/desktop/image-camp.jpg";
-import ProjectTile from "@/components/ProjectTile";
+import ProjectsGrid from "@/components/ProjectsGrid";
+import OtherServices from "@/components/OtherServices";
 
 const projects = [
   {
@@ -50,15 +51,8 @@ const WebDesign = () => {
           "We build websites that serve as powerful marketing tools and bring memorable brand experiences."
         }
       />
-      <section className="mdmax:px-6 ">
-        <ul className="grid grid-flow-row gap-y-10 lg:grid-cols-3  lg:gap-x-10 mdmax:auto-rows-fr">
-          {projects.map((project) => (
-            <li key={project.title}>
-              <ProjectTile {...project} />
-            </li>
-          ))}
-        </ul>
-      </section>
+      <ProjectsGrid projects={projects} />
+      <OtherServices />
     </div>
   );
 };
