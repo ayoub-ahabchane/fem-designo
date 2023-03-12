@@ -8,7 +8,7 @@
   }
 
   body {
-    @apply flex h-full flex-col font-sans text-black;
+    @apply flex min-h-full flex-col font-sans text-black;
   }
 
   @layer components {
@@ -51,6 +51,6 @@
   }
 
   .pageWrapper {
-    @apply mx-auto mb-[120px] max-w-[1111px] md:mb-[80px] lg:mb-[160px];
+    @apply mx-auto max-w-[1111px];
   }
 }
