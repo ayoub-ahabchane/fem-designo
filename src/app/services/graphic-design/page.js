@@ -28,7 +28,7 @@ const WebDesign = () => {
   return (
     <div className="pageWrapper flex flex-col gap-24 md:gap-[7.5rem] lg:gap-40">
       <Intro
-        title={"web design"}
+        title={"graphic design"}
         desc={
           "We build websites that serve as powerful marketing tools and bring memorable brand experiences."
         }
