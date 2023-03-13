@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import useNavMenu from "../store/hooks/useNavMenu";
 import Close from "./svg/Close";
 import Hamburger from "./svg/Hamburger";
@@ -17,7 +17,7 @@ const Navmenu = () => {
   // TODO (Feature) : Close menu on outside click
 
   return (
-    <div>
+    <div className="z-50">
       {isMobile && (
         <button className="inline-block" onClick={toggleNav}>
           {isVisible ? <Close /> : <Hamburger />}
@@ -28,7 +28,11 @@ const Navmenu = () => {
           <ul className="nav">
             {navItems.map(({ title, link }, index) => (
               <li key={`navigation${index}`}>
-                <Link href={link} className="uppercase hover:underline">
+                <Link
+                  href={link}
+                  className="uppercase hover:underline"
+                  onClick={toggleNav}
+                >
                   {title}
                 </Link>
               </li>
