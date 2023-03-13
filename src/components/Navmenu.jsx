@@ -31,7 +31,7 @@ const Navmenu = () => {
                 <Link
                   href={link}
                   className="uppercase hover:underline"
-                  onClick={toggleNav}
+                  onClick={() => isMobile && toggleNav()}
                 >
                   {title}
                 </Link>
