@@ -11,7 +11,7 @@ const Locations = () => {
         <Canada />
         <div className="flex flex-col items-center gap-8">
           <h3 className="h3">Canada</h3>
-          <Link className="button light" href={"/locations#canada"}>
+          <Link className="button light" href={"/locations#ca"}>
             See location
           </Link>
         </div>
@@ -20,7 +20,7 @@ const Locations = () => {
         <Australia />
         <div className="flex flex-col items-center gap-8">
           <h3 className="h3">Australia</h3>
-          <Link className="button light" href={"/locations#australia"}>
+          <Link className="button light" href={"/locations#au"}>
             See location
           </Link>
         </div>
@@ -29,7 +29,7 @@ const Locations = () => {
         <UnitedKingdom />
         <div className="flex flex-col items-center gap-8">
           <h3 className="h3">United Kingdom</h3>
-          <Link className="button light" href={"/locations#unitedkingdom"}>
+          <Link className="button light" href={"/locations#uk"}>
             See location
           </Link>
         </div>

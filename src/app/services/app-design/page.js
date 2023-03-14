@@ -8,6 +8,10 @@ import loopstudiosImg from "../../../assets/app-design/desktop/image-loopstudios
 import ProjectsGrid from "@/components/ProjectsGrid";
 import OtherServices from "@/components/OtherServices";
 
+export const metadata = {
+  title: "App Deisgn",
+};
+
 const projects = [
   {
     title: "Airfilter",

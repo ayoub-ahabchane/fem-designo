@@ -9,6 +9,10 @@ import campImg from "../../../assets/web-design/desktop/image-camp.jpg";
 import ProjectsGrid from "@/components/ProjectsGrid";
 import OtherServices from "@/components/OtherServices";
 
+export const metadata = {
+  title: "Web Design",
+};
+
 const projects = [
   {
     title: "Express",

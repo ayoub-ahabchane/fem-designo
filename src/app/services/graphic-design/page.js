@@ -6,6 +6,10 @@ import scienceImg from "../../../assets/graphic-design/desktop/image-science.jpg
 import ProjectsGrid from "@/components/ProjectsGrid";
 import OtherServices from "@/components/OtherServices";
 
+export const metadata = {
+  title: "Graphic Design",
+};
+
 const projects = [
   {
     title: "Tim brown",
