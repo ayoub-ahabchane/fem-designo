@@ -12,7 +12,6 @@ import { usePathname } from "next/navigation";
 
 const Footer = () => {
   const pathname = usePathname();
-  console.log(pathname);
 
   return (
     <footer className="relative grid grid-rows-[1fr_1fr_auto] place-items-center px-6 md:grid-rows-[4fr_1fr_auto] md:px-10">

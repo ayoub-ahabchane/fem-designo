@@ -1,7 +1,7 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import Error from "../svg/Error";
+import ErrorSpan from "./ErrorSpan";
 
 const Form = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -14,7 +14,6 @@ const Form = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data);
     setIsSubmitted(true);
   };
   const { name, phone, email, message } = watch();
@@ -48,15 +47,10 @@ const Form = () => {
               disabled={isSubmitted}
               type="text"
               placeholder="Name"
-              {...register("name", { required: true })}
+              {...register("name", { required: "Can't be empty" })}
               className="w-full bg-transparent py-3 px-3.5 font-medium capitalize outline-none placeholder:text-white placeholder:opacity-50 md:px-6 lg:pt-0"
             />
-            {errors.name && (
-              <span className="absolute right-0 top-3 flex items-center gap-2">
-                <p className="text-xs italic">Can&apos;t be empty</p>
-                <Error />
-              </span>
-            )}
+            {errors.name && <ErrorSpan errorMessage={errors.name.message} />}
           </label>
           <label
             className={`relative before:absolute before:left-0 before:-bottom-3 before:w-full before:bg-white focus-within:before:h-0.5 ${
@@ -67,15 +61,16 @@ const Form = () => {
               disabled={isSubmitted}
               placeholder="Email Address"
               type="email"
-              {...register("email", { required: true })}
+              {...register("email", {
+                required: "Can't be empty",
+                pattern: {
+                  value: /\S+@\S+\.\S+/,
+                  message: "Please use a valid email address",
+                },
+              })}
               className="w-full bg-transparent py-3 px-3.5 font-medium outline-none placeholder:text-white placeholder:opacity-50 md:px-6"
             />
-            {errors.email && (
-              <span className="absolute right-0 top-3 flex items-center gap-2">
-                <p className="text-xs italic">Can&apos;t be empty</p>
-                <Error />
-              </span>
-            )}
+            {errors.email && <ErrorSpan errorMessage={errors.email.message} />}
           </label>
           <label
             className={`relative before:absolute before:left-0 before:-bottom-3 before:w-full before:bg-white focus-within:before:h-0.5 ${
@@ -85,16 +80,11 @@ const Form = () => {
             <input
               disabled={isSubmitted}
               placeholder="Phone"
-              {...register("phone", { required: true })}
+              {...register("phone", { required: "Can't be empty" })}
               type="tel"
               className="w-full bg-transparent py-3 px-3.5 font-medium outline-none placeholder:text-white placeholder:opacity-50 md:px-6"
             />
-            {errors.phone && (
-              <span className="absolute right-0 top-3 flex items-center gap-2">
-                <p className="text-xs italic">Can&apos;t be empty</p>
-                <Error />
-              </span>
-            )}
+            {errors.phone && <ErrorSpan errorMessage={errors.phone.message} />}
           </label>
           <label
             className={`relative before:absolute before:left-0 before:-bottom-3 before:w-full before:bg-white focus-within:before:h-0.5 ${
@@ -104,15 +94,12 @@ const Form = () => {
             <textarea
               disabled={isSubmitted}
               placeholder="Your Message"
-              {...register("message", { required: true })}
+              {...register("message", { required: "Can't be empty" })}
               className="w-full resize-none bg-transparent py-3 px-3.5 font-medium outline-none placeholder:text-white placeholder:opacity-50 md:px-6"
               rows={3}
             ></textarea>
             {errors.message && (
-              <span className="absolute right-0 top-3 flex items-center gap-2">
-                <p className="text-xs italic">Can&apos;t be empty</p>
-                <Error />
-              </span>
+              <ErrorSpan errorMessage={errors.message.message} />
             )}
           </label>
         </div>
