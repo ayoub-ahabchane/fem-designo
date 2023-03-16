@@ -1,12 +1,10 @@
+"use client";
+
 import React, { useEffect, useState } from "react";
 
 const useNavMenu = (mediaQueryString) => {
-  const [isMobile, setIsMobile] = useState(
-    window.matchMedia(mediaQueryString).matches
-  );
-  const [isVisible, setIsVisible] = useState(
-    window !== undefined ? !window.matchMedia(mediaQueryString).matches : true
-  );
+  const [isMobile, setIsMobile] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia(mediaQueryString);

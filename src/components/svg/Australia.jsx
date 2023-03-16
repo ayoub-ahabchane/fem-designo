@@ -7,7 +7,7 @@ const Australia = () => {
       className="rounded-full bg-gradient-to-r from-darkPeach50 to-transparent"
     >
       <svg width="202" height="202" xmlns="http://www.w3.org/2000/svg">
-        <g fill="none" fill-rule="evenodd">
+        <g fill="none" fillRule="evenodd">
           <circle
             opacity=".203"
             transform="matrix(-1 0 0 1 202 0)"
@@ -15,7 +15,7 @@ const Australia = () => {
             cy="101"
             r="101"
           />
-          <g fill-rule="nonzero">
+          <g fillRule="nonzero">
             <path
               d="M163.347 100.866h14.536s9.538 19.67 11.416 28.098h-25.952v-28.098z"
               fill="#E7816B"

@@ -8,26 +8,34 @@ import Twitter from "./svg/Twitter";
 import Youtube from "./svg/Youtube";
 import Pinterest from "./svg/Pinterest";
 import Instagram from "./svg/Instagram";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
+  const pathname = usePathname();
+  console.log(pathname);
+
   return (
     <footer className="relative grid grid-rows-[1fr_1fr_auto] place-items-center px-6 md:grid-rows-[4fr_1fr_auto] md:px-10">
-      <div className=" row-start-1 row-end-3 w-full max-w-[1111px] text-white ">
-        <div className="flex flex-col items-center justify-between gap-8 rounded-2xl bg-peach bg-[url(../assets/exports/pattern-six-circles.svg)] bg-[size:876px_584px] bg-[position:center_right] bg-no-repeat px-6 py-16 lg:flex-row lg:px-24">
-          <div className="flex flex-col items-center lg:items-start">
-            <h2 className=" md:h2 mb-4 text-center text-[2rem] font-medium leading-[1.125em] md:max-w-[335px]  lg:text-left lg:leading-none">
-              Let&apos;s talk about
-              <br />
-              your project
-            </h2>
-            <p className="max-w-[28em] text-center text-[0.9375rem] leading-relaxed md:text-body lg:max-w-[28em] lg:text-left">
-              Ready to take it to the next level? Contact us today and find out
-              how our expertise can help your business grow.
-            </p>
+      {pathname !== "/contact" && (
+        <div className=" row-start-1 row-end-3 w-full max-w-[1111px] text-white ">
+          <div className="flex flex-col items-center justify-between gap-8 rounded-2xl bg-peach bg-[url(../assets/exports/pattern-six-circles.svg)] bg-[size:876px_584px] bg-[position:center_right] bg-no-repeat px-6 py-16 lg:flex-row lg:px-24">
+            <div className="flex flex-col items-center lg:items-start">
+              <h2 className=" md:h2 mb-4 text-center text-[2rem] font-medium leading-[1.125em] md:max-w-[335px]  lg:text-left lg:leading-none">
+                Let&apos;s talk about
+                <br />
+                your project
+              </h2>
+              <p className="max-w-[28em] text-center text-[0.9375rem] leading-relaxed md:text-body lg:max-w-[28em] lg:text-left">
+                Ready to take it to the next level? Contact us today and find
+                out how our expertise can help your business grow.
+              </p>
+            </div>
+            <Link className="button dark" href={"/contact"}>
+              get in touch
+            </Link>
           </div>
-          <button className="button dark">get in touch</button>
         </div>
-      </div>
+      )}
       <div className="row-span-1 row-start-3 w-full max-w-[1111px] text-white before:absolute before:inset-0 before:-z-10 before:row-span-full before:row-start-2 before:bg-black before:content-['']">
         <div className="py-16 md:py-20">
           <div className="flex w-full flex-col items-center justify-between border-white border-opacity-10 md:flex-row md:border-b md:pb-10">

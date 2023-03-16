@@ -25,9 +25,9 @@ const About = () => {
       </section>
       <section className="grid auto-rows-auto lg:grid-cols-[476px_auto] lg:grid-rows-1">
         <div className="row-span-1 row-start-2 flex flex-col items-center gap-6 bg-lighter-peach bg-[url('../assets/shared/desktop/bg-pattern-three-circles.svg')] bg-[position:left_top] bg-no-repeat py-20 px-6 text-center md:gap-8 md:rounded-b-2xl md:bg-[position:right_11px_bottom_44px] md:px-14 md:py-14 md:text-left lg:col-span-1 lg:col-start-2 lg:row-start-1 lg:items-start lg:rounded-r-2xl lg:rounded-l-none lg:bg-[position:left_-146px_bottom] lg:py-[154px] lg:px-24">
-          <h3 className="text-[2rem] font-medium capitalize leading-[1.125em]  text-peach md:text-[2.5rem]">
+          <h2 className="text-[2rem] font-medium capitalize leading-[1.125em]  text-peach md:text-[2.5rem]">
             World-class talent
-          </h3>
+          </h2>
           <p className="w-full text-center text-[0.9375rem] leading-relaxed text-black md:text-body lg:text-left">
             We are a crew of strategists, problem-solvers, and technologists.
             Every design is thoughtfully crafted from concept to launch,
@@ -52,9 +52,9 @@ const About = () => {
       </section>
       <section className="grid auto-rows-auto lg:grid-cols-[auto_476px] lg:grid-rows-1">
         <div className="row-span-1 row-start-2 flex flex-col items-center gap-6 bg-lighter-peach bg-[url('../assets/shared/desktop/bg-pattern-three-circles.svg')] bg-[position:left_top] bg-no-repeat py-20 px-6 text-center md:gap-8 md:rounded-b-2xl md:bg-[position:right_11px_bottom_44px] md:px-14 md:py-14 md:text-left lg:col-span-1 lg:col-start-1 lg:row-start-1 lg:items-start lg:rounded-l-2xl lg:rounded-r-none lg:bg-[position:left_-146px_bottom] lg:py-[154px] lg:px-24">
-          <h3 className=" text-[2rem] font-medium capitalize leading-[1.125em]  text-peach md:text-[2.5rem]">
+          <h2 className=" text-[2rem] font-medium capitalize leading-[1.125em]  text-peach md:text-[2.5rem]">
             The real deal
-          </h3>
+          </h2>
           <p className="w-full text-center text-[0.9375rem] leading-relaxed text-black md:text-body lg:text-left">
             As strategic partners in our clients’ businesses, we are ready to
             take on any challenge as our own. Solving real problems require

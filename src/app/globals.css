@@ -8,7 +8,7 @@
   }
 
   body {
-    @apply flex min-h-full flex-col font-sans text-black;
+    @apply flex min-h-screen flex-col font-sans text-black;
   }
 
   @layer components {
@@ -26,10 +26,22 @@
     @apply inline-block rounded-lg px-6 py-4 text-[0.9375rem] font-medium uppercase tracking-wider;
   }
   .button.light {
-    @apply bg-peach text-white focus-within:bg-light-peach hover:bg-light-peach;
+    @apply bg-peach text-white;
+  }
+
+  .button.light:not(button:disabled) {
+    @apply focus-within:bg-light-peach hover:bg-light-peach;
   }
   .button.dark {
-    @apply bg-white text-black focus-within:bg-light-peach hover:bg-light-peach hover:text-white;
+    @apply bg-white text-black;
+  }
+
+  .button.dark:not(button:disabled) {
+    @apply focus-within:bg-light-peach hover:bg-light-peach hover:text-white;
+  }
+
+  .button.dark:disabled {
+    @apply bg-transparent text-white;
   }
 
   .navWrapper {
@@ -52,5 +64,9 @@
 
   .pageWrapper {
     @apply mx-auto max-w-[1111px];
+  }
+
+  .error {
+    @apply bg-red-500 text-red-600;
   }
 }

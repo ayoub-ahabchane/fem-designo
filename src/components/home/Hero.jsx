@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Hero = () => {
@@ -13,7 +14,9 @@ const Hero = () => {
         responsive websites, app design, and engaging brand experiences. Find
         out more about our services.
       </p>
-      <button className="button dark">learn more</button>
+      <Link href={"/about"} className="button dark">
+        learn more
+      </Link>
     </section>
   );
 };

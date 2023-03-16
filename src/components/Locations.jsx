@@ -1,12 +1,12 @@
 import React from "react";
 import Canada from "./svg/Canada";
 import Link from "next/link";
-import Australia from "./Australia";
+import Australia from "./svg/Australia";
 import UnitedKingdom from "./svg/UnitedKingdom";
 
 const Locations = () => {
   return (
-    <ul className="grid auto-cols-fr grid-flow-row auto-rows-fr gap-y-12 gap-x-[1.875rem] py-[7.5rem] md:py-0 lg:grid-flow-col">
+    <ul className="grid auto-cols-fr grid-flow-row auto-rows-fr gap-y-12 gap-x-[1.875rem] py-[7.5rem] md:gap-y-20 md:py-0 lg:grid-flow-col">
       <li className="flex flex-col items-center gap-12">
         <Canada />
         <div className="flex flex-col items-center gap-8">
