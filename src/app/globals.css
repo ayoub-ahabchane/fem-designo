@@ -52,6 +52,14 @@
     @apply flex gap-8 text-2xl tracking-[0.08em] md:flex md:flex-row md:gap-10 md:bg-transparent md:text-sm md:tracking-widest mdmax:flex-col mdmax:bg-black mdmax:px-6 mdmax:py-12 mdmax:text-white;
   }
 
+  .mobileNavList {
+    @apply flex flex-col gap-8 bg-black px-6 py-12 text-2xl tracking-[0.08em] text-white;
+  }
+
+  .largeNavList {
+    @apply flex flex-row gap-10 bg-transparent text-sm tracking-widest;
+  }
+
   .footerNavItem {
     @apply text-sm uppercase leading-none tracking-[0.15em] transition-all duration-150 ease-out focus-within:text-light-peach hover:text-light-peach;
   }

@@ -5,9 +5,11 @@ const Passionate = () => {
     <div
       role="presentation none"
       className="rounded-full bg-gradient-to-r from-darkPeach50 to-transparent"
+      aria-hidden="true"
+      focusable="false"
     >
       <svg width="202" height="202" xmlns="http://www.w3.org/2000/svg">
-        <g fill="none" fillRule="evenodd" aria-hidden="true" focusable="false">
+        <g fill="none" fillRule="evenodd">
           <circle
             opacity=".203"
             transform="matrix(-1 0 0 1 202 0)"
