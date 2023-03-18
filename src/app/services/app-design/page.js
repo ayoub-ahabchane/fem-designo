@@ -9,7 +9,7 @@ import ProjectsGrid from "@/components/ProjectsGrid";
 import OtherServices from "@/components/OtherServices";
 
 export const metadata = {
-  title: "App Deisgn",
+  title: "App Design",
 };
 
 const projects = [

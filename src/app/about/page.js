@@ -1,7 +1,10 @@
 import Locations from "@/components/Locations";
-import Canada from "@/components/svg/Canada";
-import Link from "next/link";
 import React from "react";
+
+export const metadata = {
+  title: "About",
+};
+
 const About = () => {
   return (
     <div className="pageWrapper flex flex-col md:gap-[7.5rem] lg:gap-40">
