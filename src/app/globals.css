@@ -23,7 +23,7 @@
     @apply text-xl font-medium uppercase leading-[1.3em] tracking-[0.25em];
   }
   .button {
-    @apply inline-block rounded-lg px-6 py-4 text-[0.9375rem] font-medium uppercase tracking-wider;
+    @apply inline-block rounded-lg px-6 py-4 text-[0.9375rem] font-medium uppercase tracking-wider transition-all duration-150 ease-out;
   }
   .button.light {
     @apply bg-peach text-white;
@@ -53,7 +53,11 @@
   }
 
   .footerNavItem {
-    @apply text-sm uppercase leading-none tracking-[0.15em];
+    @apply text-sm uppercase leading-none tracking-[0.15em] transition-all duration-150 ease-out focus-within:text-light-peach hover:text-light-peach;
+  }
+
+  .footerSocialIcon {
+    @apply fill-peach transition-all duration-150 ease-out hover:fill-light-peach;
   }
 }
 

@@ -79,27 +79,42 @@ const Footer = () => {
             </div>
             <ul className="flex w-full justify-center gap-4 md:w-auto">
               <li>
-                <Link href="https://www.facebook.com">
+                <Link
+                  href="https://www.facebook.com"
+                  aria-label="Our Facebook page"
+                >
                   <Facebook />
                 </Link>
               </li>
               <li>
-                <Link href="https://www.youtube.com">
+                <Link
+                  href="https://www.youtube.com"
+                  aria-label="Our Youtube channel"
+                >
                   <Youtube />
                 </Link>
               </li>
               <li>
-                <Link href="https://www.twitter.com">
+                <Link
+                  href="https://www.twitter.com"
+                  aria-label="Our Twitter account"
+                >
                   <Twitter />
                 </Link>
               </li>
               <li>
-                <Link href="https://www.pinterest.com">
+                <Link
+                  href="https://www.pinterest.com"
+                  aria-label="Our Pinterest account"
+                >
                   <Pinterest />
                 </Link>
               </li>
               <li>
-                <Link href="https://www.instagram.com">
+                <Link
+                  href="https://www.instagram.com"
+                  aria-label="Our Instagram"
+                >
                   <Instagram />
                 </Link>
               </li>

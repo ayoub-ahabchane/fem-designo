@@ -7,7 +7,7 @@ const Passionate = () => {
       className="rounded-full bg-gradient-to-r from-darkPeach50 to-transparent"
     >
       <svg width="202" height="202" xmlns="http://www.w3.org/2000/svg">
-        <g fill="none" fillRule="evenodd">
+        <g fill="none" fillRule="evenodd" aria-hidden="true" focusable="false">
           <circle
             opacity=".203"
             transform="matrix(-1 0 0 1 202 0)"

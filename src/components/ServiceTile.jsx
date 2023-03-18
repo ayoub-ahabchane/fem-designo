@@ -4,7 +4,7 @@ import React from "react";
 const ServiceTile = ({ title, link }) => {
   return (
     <Link
-      className="flex h-full w-full flex-col items-center justify-center gap-3 rounded-2xl bg-[image:linear-gradient(rgba(29,_28,_30,_0.7),_rgba(29,_28,_30,_0.7))] bg-cover  text-white bg-blend-overlay hover:bg-[image:linear-gradient(rgba(231,_129,_107,_0.7),_rgba(231,_129,_107,_0.7))]"
+      className="group flex h-full w-full flex-col items-center justify-center gap-3 rounded-2xl bg-[color:rgba(29,_28,_30,_0.6)] bg-cover  text-white bg-blend-overlay transition-colors duration-150 ease-out focus-within:bg-[color:rgba(231,_129,_107,_0.7)] hover:bg-[color:rgba(231,_129,_107,_0.7)]"
       href={link}
     >
       <p className="text-[1.75rem] font-medium uppercase tracking-wide md:text-[2.5rem]">
@@ -14,10 +14,16 @@ const ServiceTile = ({ title, link }) => {
         <p className="text-[0.9375rem] font-medium uppercase tracking-[0.3em]">
           view projects
         </p>
-        <svg width="7" height="10" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="7"
+          height="10"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          focusable="false"
+          className="stroke-peach transition-colors ease-out group-focus-within:stroke-white group-hover:stroke-white"
+        >
           <path
             d="M1 1l4 4-4 4"
-            stroke="#E7816B"
             strokeWidth="2"
             fill="none"
             fillRule="evenodd"

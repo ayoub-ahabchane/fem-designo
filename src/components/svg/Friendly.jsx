@@ -5,6 +5,8 @@ const Friendly = () => {
     <div
       role="presentation none"
       className="rounded-full bg-gradient-to-b from-darkPeach50 to-transparent"
+      aria-hidden="true"
+      focusable="false"
     >
       <svg width="202" height="202" xmlns="http://www.w3.org/2000/svg">
         <g fill="none" fillRule="evenodd">

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 import ServiceTile from "../ServiceTile";
 
@@ -29,7 +28,6 @@ const servicesData = [
 ];
 
 const Services = () => {
-  // TODO: (Refactor) Extract service tile component
   return (
     <section className="mdmax:px-6">
       <ul className="grid grid-cols-1 grid-rows-[repeat(3,_250px)] gap-y-6 text-center md:grid-rows-[repeat(3,_200px)] lg:grid-cols-2 lg:grid-rows-[repeat(2,_308px)] lg:gap-x-6">
