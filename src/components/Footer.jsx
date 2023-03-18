@@ -61,14 +61,17 @@ const Footer = () => {
           </div>
           <div className="flex flex-col items-center gap-10 md:flex-row md:items-end md:justify-between md:pt-10">
             <div className="flex flex-col gap-10 md:flex-row lg:gap-52">
-              <address className="text-center text-body not-italic opacity-50 md:text-left">
+              <address
+                className="text-center text-body not-italic opacity-50 transition-opacity duration-200 focus-within:opacity-100 hover:opacity-100 md:text-left
+              "
+              >
                 <span className="font-medium">Designo Central Office</span>
                 <br />
                 3886 Wellington Street
                 <br />
                 Toronto, Ontario M9C 3J5
               </address>
-              <p className="text-center text-body not-italic opacity-50 md:text-left md:font-medium">
+              <p className="text-center text-body not-italic opacity-50 transition-opacity duration-200 focus-within:opacity-100 hover:opacity-100 md:text-left md:font-medium">
                 <span className="font-medium">Contact Us (Central Office)</span>
                 <br />
                 P : +1 253-863-8967
