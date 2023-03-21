@@ -27,6 +27,9 @@ module.exports = {
         "lighter-peach": "#FDF3F0",
         darkPeach50: "rgba(93,2,2,0.10)",
       },
+      dropShadow: {
+        heroShadow: "20px -40px 80px rgba(93, 2, 2, 0.497569)",
+      },
     },
   },
   plugins: [],
