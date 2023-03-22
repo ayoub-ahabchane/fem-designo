@@ -62,9 +62,9 @@ module.exports = {
       },
       animation: {
         slideUpMobile:
-          "slideUpMobile 0.6s cubic-bezier(0.65,0.05,0.36,1) forwards;",
+          "slideUpMobile 0.8s cubic-bezier(0.65,0.05,0.36,1) forwards;",
         slideUpLarge:
-          "slideUpLarge 0.6s cubic-bezier(0.65,0.05,0.36,1) forwards;",
+          "slideUpLarge 0.8s cubic-bezier(0.65,0.05,0.36,1) forwards;",
         fadeIn: "fadeIn 0.3s ease-out",
       },
     },

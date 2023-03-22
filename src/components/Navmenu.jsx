@@ -30,7 +30,7 @@ const Navmenu = () => {
               <li key={`navigation${index}`}>
                 <Link
                   href={link}
-                  className="uppercase hover:underline"
+                  className="button uppercase hover:underline"
                   onClick={() => isMobile && toggleNav()}
                 >
                   {title}

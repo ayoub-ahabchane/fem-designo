@@ -23,7 +23,7 @@
     @apply text-xl font-medium uppercase leading-[1.3em] tracking-[0.25em];
   }
   .button {
-    @apply inline-block rounded-lg px-6 py-4 text-[0.9375rem] font-medium uppercase tracking-wider transition-all duration-150 ease-out;
+    @apply inline-block rounded-lg px-6 py-4 text-[0.9375rem] font-medium uppercase tracking-wider transition-all duration-150 ease-out focus-within:shadow-[20px_-40px_80px_rgba(93,2,2,0.5)]  hover:shadow-[5px_-10px_80px_rgba(93,2,2,0.5)];
   }
   .button.light {
     @apply bg-peach text-white;
@@ -57,7 +57,7 @@
   }
 
   .largeNavList {
-    @apply flex flex-row gap-10 bg-transparent text-sm tracking-widest;
+    @apply flex flex-row gap-2 bg-transparent text-sm tracking-widest;
   }
 
   .footerNavItem {

@@ -4,7 +4,7 @@ const Passionate = () => {
   return (
     <div
       role="presentation none"
-      className="rounded-full bg-gradient-to-r from-darkPeach50 to-transparent"
+      className="rounded-full bg-gradient-to-r from-darkPeach50 to-transparent "
       aria-hidden="true"
       focusable="false"
     >
