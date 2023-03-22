@@ -6,7 +6,7 @@ export default function ProjectTile({ title, desc, image }) {
   return (
     <Link
       href={""}
-      className=" group group grid grid-flow-row rounded-2xl bg-lighter-peach transition-colors duration-150 ease-out focus-within:bg-peach focus-within:text-white hover:bg-peach hover:text-white md:grid-flow-col md:grid-cols-2 lg:grid-flow-row lg:grid-cols-1"
+      className=" focus-within::-translate-y-2 group group grid grid-flow-row rounded-2xl bg-lighter-peach transition-all duration-150 ease-out focus-within:bg-peach focus-within:text-white focus-within:shadow-[0px_30px_30px_rgba(93,2,2,0.2)] hover:-translate-y-2 hover:bg-peach hover:text-white hover:shadow-[0px_30px_30px_rgba(93,2,2,0.2)] md:grid-flow-col md:grid-cols-2 lg:grid-flow-row lg:grid-cols-1"
     >
       <Image
         src={image}

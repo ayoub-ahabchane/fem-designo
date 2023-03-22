@@ -12,6 +12,11 @@ import { usePathname } from "next/navigation";
 
 const Footer = () => {
   const pathname = usePathname();
+  const navItems = [
+    { title: "our company", link: "/about", slug: "about" },
+    { title: "locations", link: "/locations", slug: "locations" },
+    { title: "contact", link: "/contact", slug: "contact" },
+  ];
 
   return (
     <footer className="relative grid grid-rows-[1fr_1fr_auto] place-items-center px-6 md:grid-rows-[4fr_1fr_auto] md:px-10">
@@ -42,21 +47,17 @@ const Footer = () => {
               <Logo />
             </div>
             <ul className="p8-4 flex w-full flex-col items-center gap-8 border-t border-white border-opacity-10 py-8 md:w-auto md:flex-row md:gap-[2.625rem] md:border-none md:py-0">
-              <li>
-                <Link href="/about" className="footerNavItem">
-                  Our company
+              {navItems.map(({ link, slug, title }) => (
+                <Link
+                  href={link}
+                  className={`footerNavItem ${
+                    pathname === link && "text-peach"
+                  }`}
+                  key={slug}
+                >
+                  {title}
                 </Link>
-              </li>
-              <li>
-                <Link href="/locations" className="footerNavItem">
-                  Locations
-                </Link>
-              </li>
-              <li>
-                <Link className="footerNavItem" href="/contact">
-                  Contact
-                </Link>
-              </li>
+              ))}
             </ul>
           </div>
           <div className="flex flex-col items-center gap-10 md:flex-row md:items-end md:justify-between md:pt-10">

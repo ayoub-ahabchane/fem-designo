@@ -4,7 +4,7 @@ import React from "react";
 const ServiceTile = ({ title, link }) => {
   return (
     <Link
-      className="group flex h-full w-full flex-col items-center justify-center gap-3 rounded-2xl bg-[color:rgba(29,_28,_30,_0.6)] bg-cover  text-white bg-blend-overlay transition-all duration-150 ease-out focus-within:bg-[color:rgba(231,_129,_107,_0.7)] focus-within:shadow-[20px_-40px_80px_rgba(93,2,2,0.5)] hover:bg-[color:rgba(231,_129,_107,_0.7)] hover:shadow-[20px_-40px_80px_rgba(93,2,2,0.5)]"
+      className="group flex h-full w-full flex-col items-center justify-center gap-3 rounded-2xl bg-[color:rgba(29,_28,_30,_0.6)] bg-cover  text-white bg-blend-overlay transition-all duration-150 ease-out focus-within:bg-[color:rgba(231,_129,_107,_0.7)] focus-within:shadow-[0px_40px_80px_rgba(93,2,2,0.5)] hover:bg-[color:rgba(231,_129,_107,_0.7)] hover:shadow-[0px_40px_80px_rgba(93,2,2,0.5)]"
       href={link}
     >
       <p className="text-[1.75rem] font-medium uppercase tracking-wide md:text-[2.5rem]">

@@ -14,8 +14,6 @@ const navItems = [
 const LargeNav = () => {
   const activeSegment = useSelectedLayoutSegment();
 
-  const [isHovered, setIsHovered] = useState(false);
-
   return (
     <nav className="navWrapper mdmax:hidden">
       <ul className="largeNavList">
