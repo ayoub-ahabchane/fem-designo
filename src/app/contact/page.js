@@ -6,7 +6,7 @@ export const metadata = {
   title: "Contact",
 };
 
-const page = () => {
+const Contact = () => {
   return (
     <section className="pageWrapper flex flex-col md:gap-[7.5rem]">
       <Form />
@@ -15,4 +15,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Contact;
