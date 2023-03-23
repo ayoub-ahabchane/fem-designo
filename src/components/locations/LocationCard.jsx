@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 
 const LocationCard = ({
@@ -11,8 +12,36 @@ const LocationCard = ({
   desktopBg,
   id,
 }) => {
+  const leftLocationCardVariants = {
+    initial: {
+      opacity: 0,
+      translateX: "-20px",
+    },
+    animate: {
+      opacity: 1,
+      translateX: "0px",
+      transition: { ease: "easeOut", duration: 0.3 },
+    },
+  };
+  const rightLocationCardVariants = {
+    initial: {
+      opacity: 0,
+      translateX: "20px",
+    },
+    animate: {
+      opacity: 1,
+      translateX: "0px",
+      transition: { ease: "easeOut", duration: 0.3 },
+    },
+  };
+
   return (
-    <article
+    <motion.article
+      variants={
+        mapPosition === "left"
+          ? leftLocationCardVariants
+          : rightLocationCardVariants
+      }
       id={id}
       className={`grid auto-rows-fr md:gap-y-8 lg:grid-flow-col mdmax:grid-rows-[320px_auto] ${
         mapPosition === "right"
@@ -51,7 +80,7 @@ const LocationCard = ({
           mapPosition === "left" ? "col-start-1" : "col-start-2"
         }`}
       ></div>
-    </article>
+    </motion.article>
   );
 };
 

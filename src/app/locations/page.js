@@ -1,5 +1,7 @@
+"use client";
 import LocationCard from "@/components/locations/LocationCard";
 import React from "react";
+import { motion } from "framer-motion";
 
 export const metadata = {
   title: "Locations",
@@ -46,12 +48,29 @@ const page = () => {
     },
   ];
 
+  const locationsGridVariant = {
+    initial: {
+      opacity: 0,
+    },
+    animate: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3,
+      },
+    },
+  };
+
   return (
-    <section className="pageWrapper grid grid-flow-row auto-rows-fr gap-y-10 lg:gap-y-8">
+    <motion.section
+      variants={locationsGridVariant}
+      initial="initial"
+      animate="animate"
+      className="pageWrapper grid grid-flow-row auto-rows-fr gap-y-10 lg:gap-y-8"
+    >
       {locations.map((location) => (
         <LocationCard key={location.id} {...location} />
       ))}
-    </section>
+    </motion.section>
   );
 };
 

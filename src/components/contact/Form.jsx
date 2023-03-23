@@ -20,18 +20,29 @@ const Form = () => {
   const { name, phone, email, message } = watch();
 
   return (
-    <div className="flex flex-col gap-12  bg-peach bg-[url(../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg)] bg-no-repeat py-[4.5rem] px-6 text-white md:gap-10 md:rounded-2xl md:bg-[url(../assets/contact/desktop/bg-pattern-hero-desktop.svg)] md:bg-[position:left_-120px_top_-40px] md:px-14 lg:flex-row lg:justify-between lg:gap-24 lg:bg-[position:left_bottom] lg:px-24 ">
-      <div className="self-center text-center md:text-left">
-        <h1 className="mb-6 text-[2rem] font-medium capitalize leading-[1.125em]  md:mb-8 md:text-5xl">
+    <div className="flex flex-col gap-12 bg-peach  bg-[url(../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg)] bg-no-repeat py-[4.5rem] px-6 text-white md:gap-10 md:rounded-2xl md:bg-[url(../assets/contact/desktop/bg-pattern-hero-desktop.svg)] md:bg-[position:left_-120px_top_-40px] md:px-14 md:shadow-[0px_40px_80px_rgba(93,2,2,0.3)] lg:flex-row lg:justify-between lg:gap-24 lg:bg-[position:left_bottom] lg:px-24 ">
+      <motion.div
+        variants={containerVariants}
+        initial="initial"
+        animate="animate"
+        className="self-center text-center md:text-left"
+      >
+        <motion.h1
+          variants={textVariants}
+          className="mb-6 text-[2rem] font-medium capitalize leading-[1.125em]  md:mb-8 md:text-5xl"
+        >
           Contact Us
-        </h1>
-        <p className="text-[0.9375rem] leading-relaxed md:text-body">
+        </motion.h1>
+        <motion.p
+          variants={textVariants}
+          className="text-[0.9375rem] leading-relaxed md:text-body"
+        >
           Ready to take it to the next level? Let’s talk about your project or
           idea and find out how we can help your business grow. If you are
           looking for unique digital experiences that’s relatable to your users,
           drop us a line.
-        </p>
-      </div>
+        </motion.p>
+      </motion.div>
       <form
         action="post"
         className="text-[0.9375rem] leading-[1.7em] lg:w-96 lg:shrink-0"
@@ -142,9 +153,21 @@ const containerVariants = {
   },
 };
 
+const textVariants = {
+  initial: { opacity: 0, translateY: "10px" },
+  animate: {
+    opacity: 1,
+    translateY: "0px",
+    transition: { ease: "easeOut", duration: 0.15 },
+  },
+};
 const inputVariants = {
   initial: { opacity: 0, translateY: "10px" },
-  animate: { opacity: 1, translateY: "0px" },
+  animate: {
+    opacity: 1,
+    translateY: "0px",
+    transition: { ease: "easeOut", duration: 0.15 },
+  },
 };
 
 export default Form;

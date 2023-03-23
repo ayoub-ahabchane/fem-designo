@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import ServiceTile from "../ServiceTile";
+import { motion } from "framer-motion";
 
 const servicesData = [
   {
@@ -27,12 +29,43 @@ const servicesData = [
   },
 ];
 
+const servicesGridVariant = {
+  offscreen: {
+    opacity: 0,
+  },
+  onscreen: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const serviceTileVariants = {
+  offscreen: {
+    opacity: 0,
+    translateY: "20px",
+  },
+  onscreen: {
+    opacity: 1,
+    translateY: "0px",
+    transition: { ease: "easeOut", duration: 0.3 },
+  },
+};
+
 const Services = () => {
   return (
     <section className="mdmax:px-6">
-      <ul className="grid grid-cols-1 grid-rows-[repeat(3,_250px)] gap-y-6 text-center md:grid-rows-[repeat(3,_200px)] lg:grid-cols-2 lg:grid-rows-[repeat(2,_308px)] lg:gap-x-6">
+      <motion.ul
+        variants={servicesGridVariant}
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.5 }}
+        className="grid grid-cols-1 grid-rows-[repeat(3,_250px)] gap-y-6 text-center md:grid-rows-[repeat(3,_200px)] lg:grid-cols-2 lg:grid-rows-[repeat(2,_308px)] lg:gap-x-6"
+      >
         {servicesData.map((service) => (
-          <li
+          <motion.li
+            variants={serviceTileVariants}
             key={service.title}
             className={`${(service.gridStyles ??= null)} rounded-2xl ${
               service.bgMobile
@@ -40,9 +73,9 @@ const Services = () => {
         ${service.bgDesktop}`}
           >
             <ServiceTile {...service} />
-          </li>
+          </motion.li>
         ))}
-      </ul>
+      </motion.ul>
     </section>
   );
 };
