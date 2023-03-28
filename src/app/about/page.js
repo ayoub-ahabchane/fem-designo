@@ -14,9 +14,7 @@ const About = () => {
     <div className="pageWrapper flex flex-col md:gap-[7.5rem] lg:gap-40">
       <AboutHero />
       <WorldClassCard />
-      <section>
-        <Locations />
-      </section>
+      <Locations />
       <RealDealCard />
     </div>
   );

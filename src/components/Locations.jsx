@@ -36,7 +36,7 @@ const Locations = () => {
       variants={locationsListVariants}
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: true, amount: 0.8 }}
+      viewport={{ once: true, amount: 0.5 }}
       className="grid auto-cols-fr grid-flow-row auto-rows-fr gap-y-12 gap-x-[1.875rem] py-[7.5rem] md:gap-y-20 md:py-0 lg:grid-flow-col"
     >
       <motion.li
